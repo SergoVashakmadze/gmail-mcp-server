@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "gmail": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/gmail-mcp-server",
+        "run",
+        "python",
+        "src/server.py"
+      ],
+      "env": {
+        "GMAIL_CREDENTIALS_PATH": "/path/to/gmail-mcp-server/credentials.json",
+        "GMAIL_TOKEN_PATH": "/path/to/gmail-mcp-server/token.json",
+        "GMAIL_MAX_RESULTS": "10"
+      }
+    }
+  }
+}
